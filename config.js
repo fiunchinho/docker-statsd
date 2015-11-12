@@ -6,7 +6,7 @@
         flushInterval: 60000,
         stackdriver: {
             apiKey: process.env.STACKDRIVER_API_KEY || "api_key",
-            source: process.env.SOURCE || "statsd_source"
+            debug: true
         }
     };
 })()

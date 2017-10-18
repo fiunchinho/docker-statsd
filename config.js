@@ -10,6 +10,8 @@
       sourcePrefixSeparator: process.env.SOURCE_PREFIX_SEPARATOR || "--",
       debug: true
     },
-    datadogApiKey: process.env.DATADOG_API_KEY || "api_key"
+    datadogApiKey: process.env.DATADOG_API_KEY || "api_key",
+    datadogPrefix: process.env.DATADOG_PREFIX || "",
+    datadogTags: (process.env.DATADOG_TAGS || "").split(",").filter(function(t){return t})
   };
 })()

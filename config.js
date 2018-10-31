@@ -15,3 +15,4 @@
     datadogTags: (process.env.DATADOG_TAGS || "").split(",").filter(function(t){return t})
   };
 })()
+
